@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 90ef123fcc144684ebc6b7151a3a46b6
+guid: acf45116d1a7e1c479a2c5808adaa0b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sheep_0
+      name: wolf_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baa7012a7b211c749b0dd8c7b1442174
-      internalID: -731884138
+      spriteID: a09d641e53f214d409ee186bca87f205
+      internalID: 183142835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_1
+      name: wolf_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57791b85e6f25f24c81e6ecdef82a6a4
-      internalID: -1497003923
+      spriteID: 5e2c52209ebc3b34789de1bb80bb65ea
+      internalID: 1584964459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_2
+      name: wolf_2
       rect:
         serializedVersion: 2
         x: 2000
@@ -179,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1a068668e8362e4db25f6fdf863505e
-      internalID: 1945447445
+      spriteID: 9bda5fc7851f4fb4e9a49bf208fe6432
+      internalID: 1564060123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sheep_3
+      name: wolf_3
       rect:
         serializedVersion: 2
         x: 3000
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae3b2d1753a144d438ff327cd87e0b36
-      internalID: -1048872635
+      spriteID: c6b458e40955070478d76562cb52f05d
+      internalID: -720775677
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sheep_0: -731884138
-      sheep_1: -1497003923
-      sheep_2: 1945447445
-      sheep_3: -1048872635
+      wolf_0: 183142835
+      wolf_1: 1584964459
+      wolf_2: 1564060123
+      wolf_3: -720775677
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
