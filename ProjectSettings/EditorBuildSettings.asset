@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 867948faee334d24ea5e6ade8586b822
   - enabled: 1
-    path: "Assets/Scenes/\u0130zomethric.unity"
+    path: Assets/Scenes/Izomethric.unity
     guid: f14dc4b57a1c64348a357667d9d09d38
   m_configObjects: {}
