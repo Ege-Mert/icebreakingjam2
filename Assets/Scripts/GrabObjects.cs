@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrabObjects : MonoBehaviour
 {
-    public Transform grabDetect;    
+    public Transform grabDetect;
     public Transform itemHolder;
     public float rayDist;
 
@@ -16,23 +16,37 @@ public class GrabObjects : MonoBehaviour
 
     void Update()
     {
+        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right, rayDist, ItemLayer);
 
-        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right , rayDist, ItemLayer);
-        
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (grabCheck.collider != null && grabbedObject == null)
             {
                 objectDetect = true;
                 grabbedObject = grabCheck.collider.gameObject;
-                grabCheck.collider.gameObject.transform.parent = itemHolder;
-                grabCheck.collider.gameObject.transform.position = itemHolder.position;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+
+                // Disable the collider when grabbing
+                Collider2D objectCollider = grabbedObject.GetComponent<Collider2D>();
+                if (objectCollider != null)
+                {
+                    objectCollider.enabled = false;
+                }
+
+                grabbedObject.transform.parent = itemHolder;
+                grabbedObject.transform.position = itemHolder.position;
+                grabbedObject.GetComponent<Rigidbody2D>().isKinematic = true;
             }
             else
             {
                 if (grabbedObject != null)
                 {
+                    // Enable the collider when releasing
+                    Collider2D objectCollider = grabbedObject.GetComponent<Collider2D>();
+                    if (objectCollider != null)
+                    {
+                        objectCollider.enabled = true;
+                    }
+
                     grabbedObject.transform.parent = null;
                     grabbedObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 }

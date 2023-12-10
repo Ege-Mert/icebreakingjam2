@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 429801570582977462}
   - component: {fileID: 8698887181585476978}
   - component: {fileID: 5018207672259296554}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sheepp
-  m_TagString: Untagged
+  m_TagString: lamb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

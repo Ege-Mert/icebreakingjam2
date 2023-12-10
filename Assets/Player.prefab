@@ -78,9 +78,10 @@ GameObject:
   - component: {fileID: 8496697305080324369}
   - component: {fileID: 1072867644885021652}
   - component: {fileID: 5283986056452409535}
+  - component: {fileID: -7473526289626400991}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,3 +290,15 @@ MonoBehaviour:
   "sa\u011F": 0
   sol: 0
   "a\u015F\u015Fa\u011F\u0131": 0
+--- !u!114 &-7473526289626400991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9175390487131889361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea94dde650c5dc04dbd2bd4d8b7ec005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

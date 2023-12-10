@@ -31,6 +31,7 @@ public class OdaGeçişleri : MonoBehaviour
         {
             // Çarpışma gerçekleştiğinde sahne değiştir
             SahneDegistirDisari();
+            print("switching to outside");
         }
     }
 
@@ -41,7 +42,7 @@ public class OdaGeçişleri : MonoBehaviour
 
         // Sahneyi değiştir
         SceneManager.LoadScene(yeniSahneAdi);
-        
+                
 
     }
 

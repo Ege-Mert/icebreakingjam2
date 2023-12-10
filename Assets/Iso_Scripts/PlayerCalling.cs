@@ -10,6 +10,7 @@ public class PlayerCalling : MonoBehaviour
     void Start()
     {
         objectPosisions = this.transform.position;
+        objectPosisions.x += 2.0f;
         Instantiate(Player, objectPosisions, Quaternion.identity);
         
     }
