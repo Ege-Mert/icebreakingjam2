@@ -17,7 +17,7 @@ public class BullyMissionControl : MonoBehaviour
             if (collision.gameObject.name == "metalPipe")
             {
                 missionTrue = true;
-                Debug.Log("Boruyu aldı.");
+                
                 Destroy(pipe);
             }
         }

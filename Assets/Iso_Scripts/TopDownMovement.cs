@@ -14,7 +14,9 @@ public class TopDownMovement : MonoBehaviour
     public Animator animator;
     public string objectName;
     [SerializeField] GameObject bully;
-    public GameObject engel;
+    public GameObject BullyEngel;
+    public GameObject SecondEngel;
+    public GameObject ThirtEngel;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -52,14 +54,25 @@ public class TopDownMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "BullyQuest")
         {
-            Debug.Log("BullyQuest tagged object hit");
-            RunMyFunction();
+
+            Destroy(BullyEngel);
         }
+        if (collision.gameObject.tag == "SecondQuest")
+        {
+           
+            Destroy(SecondEngel);
+            
+        }
+        if (collision.gameObject.tag == "ThirtQuest")
+        {
+
+            Destroy(ThirtEngel);
+
+        }
+
+
     }
 
-    void RunMyFunction()
-    {
-        Destroy(engel);
-    }
+    
 
 }

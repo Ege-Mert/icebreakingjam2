@@ -29,6 +29,9 @@ TagManager:
   - kapi3
   - kapidisari
   - Bully
+  - BullyQuest
+  - SecondQuest
+  - ThirtQuest
   layers:
   - Default
   - TransparentFX
