@@ -106,7 +106,7 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
         {
             TopDownMovement.statikim.StateMachine("backidleanimetion");
 
-            Debug.Log("Fucking fonksiyona giriyor");
+            
 
         }
 
@@ -115,7 +115,7 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
         {
             TopDownMovement.statikim.StateMachine("Frontidleanimation");
 
-            Debug.Log("Fucking fonksiyona giriyor");
+            
 
         }
 
@@ -124,7 +124,7 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
         {
             TopDownMovement.statikim.StateMachine("Leftsideanimation");
 
-            Debug.Log("Fucking fonksiyona giriyor");
+           
 
         }
 

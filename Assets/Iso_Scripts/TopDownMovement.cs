@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,6 +12,9 @@ public class TopDownMovement : MonoBehaviour
     public static TopDownMovement statikim;
     string currentState;
     public Animator animator;
+    public string objectName;
+    [SerializeField] GameObject bully;
+    public GameObject engel;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -23,6 +26,15 @@ public class TopDownMovement : MonoBehaviour
         moveInput.y = Input.GetAxisRaw("Vertical");
         
         rb2d.velocity = moveInput * moveSpeed;
+
+        
+
+       // if (collision.gameObject.tag == "BullyQuest" && bully.GetComponent<BullyMissionControl>().missionTrue == true)
+       // {
+       //     Debug.Log("Specific tag object hit");
+       //     // Diğer işlemler
+       // }
+
     }
     public void StateMachine(string Statex) 
     {
@@ -32,4 +44,22 @@ public class TopDownMovement : MonoBehaviour
        
 
     }
+
+    // 2023-12-10 AI-Tag 
+    // This was created with assistance from Muse, a Unity Artificial Intelligence product
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BullyQuest")
+        {
+            Debug.Log("BullyQuest tagged object hit");
+            RunMyFunction();
+        }
+    }
+
+    void RunMyFunction()
+    {
+        Destroy(engel);
+    }
+
 }
