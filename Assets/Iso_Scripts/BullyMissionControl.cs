@@ -18,8 +18,8 @@ public class BullyMissionControl : MonoBehaviour
             if (collision.gameObject.tag == "metalPipe")
             {
                 missionTrue = true;
-                Destroy(bullyBarrier);
-                Destroy(pipe);
+            Destroy(collision.gameObject);
+            Destroy(pipe);
             }
         }
     

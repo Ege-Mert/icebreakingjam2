@@ -17,7 +17,7 @@ public class JonnyMissionControl : MonoBehaviour
         if (collision.gameObject.tag == "plank")
         {
             jonnyMissionControl = true;
-
+            Destroy(collision.gameObject);
             Destroy(kalas);
         }
     }

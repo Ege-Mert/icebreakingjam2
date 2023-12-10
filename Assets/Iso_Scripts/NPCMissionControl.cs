@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCMissionControl : MonoBehaviour
 {
@@ -18,8 +19,18 @@ public class NPCMissionControl : MonoBehaviour
         {
             npcMission = true;
             Destroy(collision.gameObject);
-            Destroy(sand);
-            
+            Debug.Log("Good Ending");
+            SceneManager.LoadScene("GoodEndingScene");
+
+        }
+        else if (collision.gameObject.tag == "stone")
+        {
+            npcMission = true;
+            Destroy(collision.gameObject);
+            Debug.Log("Bad Ending");
+            SceneManager.LoadScene("BadEndingScene");
+
         }
     }
 }
+

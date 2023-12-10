@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6fb7d8aad7ae1d9448528cef7f5a5aa6
+guid: 6356e9c8fc1bfb044a3ebc794dd19246
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: butonlar2_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 742
+        width: 626
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5016593f541a12d45abaef1e2db593cf
+      internalID: 1617691535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonlar2_1
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 793
+        width: 141
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d046f3552e604e449740c55cdb40485
+      internalID: -1637738504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonlar2_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 404
+        width: 576
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f0f4f795f3d6846b97f01c0d6256cc
+      internalID: -903948329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonlar2_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 66
+        width: 622
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f4da270bbc5314e98731257ae68361
+      internalID: -1005351927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butonlar2_4
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 99
+        width: 167
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bc6fc393e453645849dd29af5e1318
+      internalID: -439015032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +237,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butonlar2_0: 1617691535
+      butonlar2_1: -1637738504
+      butonlar2_2: -903948329
+      butonlar2_3: -1005351927
+      butonlar2_4: -439015032
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
