@@ -5,9 +5,6 @@ using UnityEngine;
 public class WolfPopUp : MonoBehaviour
 {
     [SerializeField] GameObject Wolf;
-    private void Start()
-    {
-    }
     private void Update()
     {
         //  Debug.Log(""+bully.GetComponent<BullyMissionControl>().missionTrue);

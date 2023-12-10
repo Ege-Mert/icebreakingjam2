@@ -6,6 +6,7 @@ public class OldLadyMissionControl : MonoBehaviour
 {
     public bool SecondmissionTrue;
     public GameObject yün;
+    [SerializeField] GameObject oldladyBarrier;
 
     private void Start()
     {
@@ -14,11 +15,11 @@ public class OldLadyMissionControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "yün")
+        if (collision.gameObject.tag == "wool")
         {
             SecondmissionTrue = true;
-            
-            Destroy(yün);
+            Destroy(oldladyBarrier);
+            Destroy(collision.gameObject);
         }
     }
 }

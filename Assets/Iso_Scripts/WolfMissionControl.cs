@@ -6,6 +6,7 @@ public class WolfMissionControl : MonoBehaviour
 {
     public bool ThirdmissionTrue;
     public GameObject koyun;
+    [SerializeField] GameObject wolfBarrier;
 
     private void Start()
     {
@@ -14,10 +15,12 @@ public class WolfMissionControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "Sheepp")
+        if (collision.gameObject.tag == "lamb")
         {
             ThirdmissionTrue = true;
+            Destroy(wolfBarrier);
             Destroy(koyun);
+            Destroy(collision.gameObject);
         }
     }
 }

@@ -6,6 +6,7 @@ public class BullyMissionControl : MonoBehaviour
 {
     public bool missionTrue;
     public GameObject pipe;
+    [SerializeField] GameObject bullyBarrier;
 
     private void Start()
     {
@@ -14,10 +15,10 @@ public class BullyMissionControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.gameObject.name == "metalPipe")
+            if (collision.gameObject.tag == "metalPipe")
             {
                 missionTrue = true;
-                
+                Destroy(bullyBarrier);
                 Destroy(pipe);
             }
         }

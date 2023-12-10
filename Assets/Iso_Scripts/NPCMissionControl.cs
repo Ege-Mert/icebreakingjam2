@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPCMissionControl : MonoBehaviour
 {
     public bool npcMission;
-    public GameObject cam;
+    public GameObject sand;
 
     private void Start()
     {
@@ -14,11 +14,12 @@ public class NPCMissionControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "kum")
+        if (collision.gameObject.tag == "sand")
         {
             npcMission = true;
-
-            Destroy(cam);
+            Destroy(collision.gameObject);
+            Destroy(sand);
+            
         }
     }
 }

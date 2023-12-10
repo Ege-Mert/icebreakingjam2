@@ -14,7 +14,7 @@ public class JonnyMissionControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "kalas")
+        if (collision.gameObject.tag == "plank")
         {
             jonnyMissionControl = true;
 
