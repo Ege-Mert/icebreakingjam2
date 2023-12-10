@@ -23,6 +23,11 @@ TagManager:
   - egg
   - meat
   - lamb
+  - goldenEgg
+  - kapi
+  - kapi2
+  - kapi3
+  - kapidisari
   layers:
   - Default
   - TransparentFX

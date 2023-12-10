@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 867948faee334d24ea5e6ade8586b822
   - enabled: 1
-    path: Assets/Scenes/Izomethric.unity
+    path: Assets/Scenes/OurTown.unity
     guid: f14dc4b57a1c64348a357667d9d09d38
+  - enabled: 1
+    path: Assets/Scenes/1.unity
+    guid: ccfdf805d792bfa459d2a4fc32f540af
+  - enabled: 1
+    path: Assets/Scenes/2.unity
+    guid: fab863f4abcc19b44998957e7dedb296
+  - enabled: 1
+    path: Assets/Scenes/3.unity
+    guid: 25190e118e3da90489a1ed085a71c7ce
   m_configObjects: {}
