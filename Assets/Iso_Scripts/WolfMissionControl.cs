@@ -7,10 +7,15 @@ public class WolfMissionControl : MonoBehaviour
     public bool ThirdmissionTrue;
     public GameObject koyun;
     [SerializeField] GameObject wolfBarrier;
+    public AudioSource calgi;
+    public AudioClip win;
 
     private void Start()
     {
         ThirdmissionTrue = false;
+        calgi = gameObject.AddComponent<AudioSource>();
+        calgi.clip = win;
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -21,6 +26,7 @@ public class WolfMissionControl : MonoBehaviour
             Destroy(wolfBarrier);
             Destroy(koyun);
             Destroy(collision.gameObject);
+            calgi.PlayOneShot(win);
         }
     }
 }

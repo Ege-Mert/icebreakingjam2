@@ -7,10 +7,14 @@ public class BullyMissionControl : MonoBehaviour
     public bool missionTrue;
     public GameObject pipe;
     [SerializeField] GameObject bullyBarrier;
+    public AudioSource Bitti;
+    public AudioClip bittii;
 
     private void Start()
     {
         missionTrue = false;
+        Bitti = gameObject.AddComponent<AudioSource>();
+        Bitti.clip = bittii;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -20,6 +24,7 @@ public class BullyMissionControl : MonoBehaviour
                 missionTrue = true;
             Destroy(collision.gameObject);
             Destroy(pipe);
+            Bitti.PlayOneShot(bittii);
             }
         }
     

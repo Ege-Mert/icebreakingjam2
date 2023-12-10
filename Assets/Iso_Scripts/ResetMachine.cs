@@ -24,12 +24,17 @@ public class ResetMachine : MonoBehaviour
     public GameObject goldenEgg;
     public GameObject meat;
     public GameObject lamb;
+    public AudioSource MachineAudioSourcer;
+    public AudioClip clip;
 
     private GameObject machine;
 
     private void Start()
     {
         machine = GameObject.FindGameObjectWithTag("Machine");
+        MachineAudioSourcer.mute = true;
+        MachineAudioSourcer = gameObject.AddComponent<AudioSource>();
+        MachineAudioSourcer.clip = clip;
     }
 
 
@@ -39,97 +44,148 @@ public class ResetMachine : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Instantiate(cloth, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "cloth")
         {
             Destroy(collision.gameObject);
             Instantiate(wool, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         //////////////////////////////////////////////////////////
         else if (collision.gameObject.tag == "metal")
         {
             Destroy(collision.gameObject);
             Instantiate(metalPipe, machine.transform.position, Quaternion.identity);
+
+           SoundPlayerMachine();
         }
         //////////////////////////////////////////////////////////////////////
         else if (collision.gameObject.tag == "glassObject")
         {
             Destroy(collision.gameObject);
             Instantiate(glass, machine.transform.position, Quaternion.identity);
+
+             SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "glass")
         {
             Destroy(collision.gameObject);
             Instantiate(sand, machine.transform.position, Quaternion.identity);
+
+             SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "sand")
         {
             Destroy(collision.gameObject);
             Instantiate(stone, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         ///////////////////////////////////////////////////////////////////////
         else if (collision.gameObject.tag == "chair")
         {
             Destroy(collision.gameObject);
             Instantiate(plank, machine.transform.position, Quaternion.identity);
+
+             SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "plank")
         {
             Destroy(collision.gameObject);
             Instantiate(sapling, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         ///////////////////////////////////////////////////////////////////////
         else if (collision.gameObject.tag == "chciken")
         {
             Destroy(collision.gameObject);
             Instantiate(egg, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "egg")
         {
             Destroy(collision.gameObject);
             Instantiate(chicken, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "chciken")
         {
             Destroy(collision.gameObject);
             Instantiate(egg, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "egg")
         {
             Destroy(collision.gameObject);
             Instantiate(chicken, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "chciken")
         {
             Destroy(collision.gameObject);
             Instantiate(egg, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "egg")
         {
             Destroy(collision.gameObject);
             Instantiate(chicken, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "chciken")
         {
             Destroy(collision.gameObject);
             Instantiate(egg, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "egg")
         {
             Destroy(collision.gameObject);
             Instantiate(chicken, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         else if (collision.gameObject.tag == "chicken")
         {
             Destroy(collision.gameObject);
             Instantiate(goldenEgg, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
         }
         ///////////////////////////////////////////////////////////////////////////////////
         else if (collision.gameObject.tag == "meat")
         {
             Destroy(collision.gameObject);
             Instantiate(lamb, machine.transform.position, Quaternion.identity);
+
+            SoundPlayerMachine();
+
         }
+
+
+
+    }
+    void SoundPlayerMachine()
+    {
+
+       MachineAudioSourcer.PlayOneShot(clip);
+
     }
 
+    void SoundPlayerStop()
+    {
+        MachineAudioSourcer.mute = true;
+    }
+    
 }

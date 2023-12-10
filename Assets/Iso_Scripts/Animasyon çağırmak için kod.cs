@@ -9,7 +9,11 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
     public bool sağ;
     public bool sol;
     public bool aşşağı;
-
+    public AudioSource playerAudioSource;
+    private void Start()
+    {
+        StepSoundStop();
+    }
     void Update()
     {
       hizim= TopDownMovement.statikim.moveSpeed;
@@ -31,8 +35,12 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
         {
             DFunction();
         }
+        else
+        {
+            StepSoundStop();
+        }
 
-        
+
 
 
         void WFunction()
@@ -45,10 +53,12 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
             if (TopDownMovement.statikim.moveInput.y == 1)
             {
                 TopDownMovement.statikim.StateMachine("backrunanimation");
+                StepSound();
                 
 
             }
            
+
 
         }
 
@@ -62,9 +72,11 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
             if (TopDownMovement.statikim.moveInput.x == -1)
             {
                 TopDownMovement.statikim.StateMachine("Leftrunanimation");
+                StepSound();
 
 
             }
+            
         }
 
         void SFunction()
@@ -77,9 +89,11 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
             if (TopDownMovement.statikim.moveInput.y == -1)
             {
                 TopDownMovement.statikim.StateMachine("frontrunanimation");
+                StepSound();
 
 
             }
+            
         }
 
         void DFunction()
@@ -93,9 +107,11 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
             if (TopDownMovement.statikim.moveInput.x == 1)
             {
                 TopDownMovement.statikim.StateMachine("rightrunanimation");
+                StepSound();
 
 
             }
+            
         }
     }
 
@@ -137,7 +153,18 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
 
         }
 
+    private void StepSound()
+    {
+        // setap soundu çağır
+        playerAudioSource.mute = false;
+    }
+
+    void StepSoundStop() 
+    {
+        playerAudioSource.mute = true;
+
+    }
 
 
- }
+}
 
