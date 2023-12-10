@@ -1,13 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class YourClassName : MonoBehaviour
 {
+    [SerializeField]
+    private int sceneIndexToLoad = 1; // Set the default scene index here
+
     public void Play()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(sceneIndexToLoad);
     }
 
     public void Quit()

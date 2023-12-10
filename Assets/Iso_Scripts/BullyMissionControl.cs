@@ -24,6 +24,7 @@ public class BullyMissionControl : MonoBehaviour
                 missionTrue = true;
             Destroy(collision.gameObject);
             Destroy(pipe);
+            Destroy(bullyBarrier);
             Bitti.PlayOneShot(bittii);
             }
         }
