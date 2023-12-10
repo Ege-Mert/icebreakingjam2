@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -568302003909029248}
   - component: {fileID: -7201696843037561575}
   m_Layer: 7
-  m_Name: Adsz_Resim
+  m_Name: metalPipe
   m_TagString: metalPipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

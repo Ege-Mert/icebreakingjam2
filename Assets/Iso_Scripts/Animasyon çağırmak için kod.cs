@@ -133,7 +133,7 @@ public class Animasyonçağırmakiçinkod : MonoBehaviour
         
             TopDownMovement.statikim.StateMachine("Rightidleanimation");
 
-            Debug.Log("Fucking fonksiyona giriyor");
+            
 
         }
 

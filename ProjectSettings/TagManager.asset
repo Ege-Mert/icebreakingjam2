@@ -28,6 +28,7 @@ TagManager:
   - kapi2
   - kapi3
   - kapidisari
+  - Bully
   layers:
   - Default
   - TransparentFX
